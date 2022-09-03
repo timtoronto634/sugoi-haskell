@@ -1,3 +1,10 @@
+module Tree
+(
+  Tree,
+  EmptyTree
+) where
+
+data EmptyTree
 data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show)
 
 singleton :: a -> Tree a
@@ -17,5 +24,3 @@ treeElem x (Node a left right)
   | x < a = treeElem x left
   | x > a = treeElem x right
 
-
--- let nums = [8, 6, 4, 1, 7, 3, 5]

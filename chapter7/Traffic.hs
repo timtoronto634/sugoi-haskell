@@ -1,8 +1,6 @@
--- class Eq a where
---   (==) :: a -> a -> Bool
---   (/=) :: a -> a -> Bool
---   x == y = not (x /= y)
---   x /= y = not (x == y)
+module Traffic 
+( TrafficLight
+) where
 
 data TrafficLight = Red | Yellow | Green
 
