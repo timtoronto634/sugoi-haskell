@@ -1,10 +1,12 @@
 module Tree
 (
   Tree,
-  EmptyTree
+  EmptyTree,
+  Node
 ) where
 
 data EmptyTree
+data Node
 data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show)
 
 singleton :: a -> Tree a
